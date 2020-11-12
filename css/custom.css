@@ -48,7 +48,7 @@ body, html {
     background-size: contain;
 }
 
-#slider {
+#slider h1 {
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -77,10 +77,14 @@ a:hover {
     transition: all ease-out 0.2s;
 }
 
-#servicos a.destaque#hover {
+#servicos a.destaque:hover {
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
     transform: scale(1.05);
+}
+
+#servicos p {
+    color: var(--dark);
 }
 
 #servicos a.destaque .img-container {
@@ -90,7 +94,7 @@ a:hover {
     height: 200px;
 }
 
-#servicos a.destaque .img-container {
+#servicos a.destaque .img-container img {
     max-height: 160px;
 }
 
@@ -143,7 +147,7 @@ a:hover {
 
 #clientes .cliente-texto .imagem span {
     color: var(--secundary);
-    font-size: 100px;
+    font-size: 110px;
     line-height: 110px;
     letter-spacing: -10px;
     font-weight: 900;
@@ -153,7 +157,7 @@ a:hover {
 #clientes .cliente-texto .telefone {
     display: flex;
     font-size: 14px;
-    color: #161616;
+    color: #b4b4b4;
 }
 
 #clientes .cliente-texto .telefone span {
@@ -161,4 +165,39 @@ a:hover {
     color: #797979;
     font-weight: 900;
     display: block;
+}
+
+#servicos .badge {
+    font-weight: 400;
+}
+
+#servicos .element-item img {
+    border-radius: 5px;
+    transition: all ease-out 0.2s;
+}
+
+#servicos .element-item img:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+#servicos .button-group {
+    margin-bottom: 30px;
+}
+
+#servicos .button-group button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+}
+
+#servicos .button-group button + button {
+    margin-left: 30px;
+}
+
+#servicos .button-group button.active {
+    color: var(--primary);
 }
