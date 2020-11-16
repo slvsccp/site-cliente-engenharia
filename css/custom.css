@@ -201,3 +201,87 @@ a:hover {
 #servicos .button-group button.active {
     color: var(--primary);
 }
+
+#contato .email {
+    border-radius: 5px;
+    background-color: var(--secundary);
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+}
+
+#contato .email img {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+}
+
+#contato .email form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 2rem;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder {
+  background: none;
+  color: #fff;
+}
+
+#contato ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #contato ul li {
+    display: flex;
+    list-style-type: none;
+    margin-left: 25px;
+  }
+
+  #contato ul li:first-child {
+    margin-left: 0;
+  }
+  
+  #contato ul li a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all ease-out 0.2s;
+  }
+  
+  #contato ul li a:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+  }
+  
+  #contato ul li img {
+    max-height: 20px;
+  }
+
+  .btn {
+      text-transform: uppercase;
+  }
+
+
+/*
+.sr-only {
+    border: none;
+    width: 100vh;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    max-width: 100px;
+}
+*/
