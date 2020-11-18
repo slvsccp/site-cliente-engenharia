@@ -202,86 +202,62 @@ a:hover {
     color: var(--primary);
 }
 
-#contato .email {
-    border-radius: 5px;
-    background-color: var(--secundary);
-    color: #fff;
+.get_in_touch {
+    max-width: 800px;
+    margin: 50px auto;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 30px;
+    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
-#contato .email img {
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: var(--secundary);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+    transform: translateY(-24px);
+}
+
+.contact-form .input-text:focus {
+    outline: none;
+}
+
+.contact-form .label {
     position: absolute;
-    left: 30px;
-    top: -30px;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--secundary);
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
 }
 
-#contato .email form {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 2rem;
-}
-
-#contato .email .form-control,
-#contato .email .form-control::placeholder {
-  background: none;
-  color: #fff;
-}
-
-#contato ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  #contato ul li {
-    display: flex;
-    list-style-type: none;
-    margin-left: 25px;
-  }
-
-  #contato ul li:first-child {
-    margin-left: 0;
-  }
-  
-  #contato ul li a {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    transition: all ease-out 0.2s;
-  }
-  
-  #contato ul li a:hover {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-  }
-  
-  #contato ul li img {
-    max-height: 20px;
-  }
-
-  .btn {
-      text-transform: uppercase;
-  }
-
-
-/*
-.sr-only {
+.contact-form .submit-btn {
+    display: inline-block;
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
     border: none;
-    width: 100vh;
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    max-width: 100px;
+    width: 200px;
+    cursor: pointer;
 }
-*/
+
