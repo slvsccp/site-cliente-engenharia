@@ -210,54 +210,40 @@ a:hover {
     padding: 30px;
 }
 
-.contact-form .form-field {
-    position: relative;
-    margin: 32px 0;
+/* footer */
+
+#contact-area {
+    text-align: center;
 }
 
-.contact-form .input-text {
-    display: block;
-    width: 100%;
-    height: 36px;
-    border-width: 0 0 2px 0;
-    border-color: var(--secundary);
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
+/*
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
+*/
 
-.contact-form .input-text:focus + .label,
-.contact-form .input-text.not-empty + .label {
-    transform: translateY(-24px);
-}
-
-.contact-form .input-text:focus {
-    outline: none;
-}
-
-.contact-form .label {
-    position: absolute;
-    left: 20px;
-    bottom: 11px;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-    color: var(--secundary);
-    cursor: text;
-    text-transform: capitalize;
-    transition: transform 0.2s ease-in-out;
-}
-
-.contact-form .submit-btn {
-    display: inline-block;
-    background-image: linear-gradient(125deg, #a72879, #064497);
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.contact-box p {
     font-size: 16px;
-    padding: 8px 16px;
-    border: none;
-    width: 200px;
-    cursor: pointer;
+    text-align: right;
+    font-weight: 700;
 }
 
+.contact-title {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+/* copy */
+#copy-area {
+    background-color: #f1f1f1;
+}
+
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+}
